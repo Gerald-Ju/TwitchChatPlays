@@ -2,6 +2,7 @@ import ctypes
 from ctypes import wintypes
 from Modules.KeyCode import KeyCode
 import time
+import mouse
 
 user32 = ctypes.WinDLL('user32', use_last_error=True)
 
@@ -106,6 +107,23 @@ def pressKey(common_key):
             time.sleep(0.1)
             ReleaseKey(hex)
 
+        elif key == "r":
+            print(f"Pressing {key}")
+            hex = keyCode.toKeyCode(key)
+            PressKey(hex)
+            time.sleep(0.1)
+            ReleaseKey(hex)
+
+        elif key == "m1":
+            print(f"Pressing left mouse button")
+            time.sleep(0.2)
+            mouse.click("left")
+
+        elif key == "m2":
+            print(f"Pressing right mouse button")
+            time.sleep(0.2)
+            mouse.click("right")
+
         elif key == "space":
             print(f"Pressing {key}")
             hex_int = int("0x20", 16)
@@ -130,6 +148,13 @@ def pressKey(common_key):
         elif key == "f1":
             print(f"Pressing {key}")
             hex_int = int("0x70", 16)
+            PressKey(hex_int)
+            time.sleep(0.1)
+            ReleaseKey(hex_int)
+        
+        elif key == "alt":
+            print(f"Pressing {key}")
+            hex_int = int("0xA4", 16)
             PressKey(hex_int)
             time.sleep(0.1)
             ReleaseKey(hex_int)
