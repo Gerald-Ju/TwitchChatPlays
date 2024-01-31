@@ -33,7 +33,9 @@ C:\Users\Gerald\GenericFolder> python TwitchChatPlays.py
 
 Converts all chat input to lowercase for recognition
 
-    - All Keys from A-Z: "w" for (w key), "a" for (a key) etc. However only the standard "gaming" keys are currently coded in. Other keys will need to be added in yourself.
+    - All Keys from A-Z: "w" for (w key), "a" for (a key) etc. 
+    However only the standard "gaming" keys are currently coded in. 
+    Other keys will need to be added in yourself.
         - Gaming keys that are coded in:
             - "w" for W key
             - "a" for A key
@@ -43,7 +45,8 @@ Converts all chat input to lowercase for recognition
             - "q" for Q key
             - "r" for R key
     
-    - All Numbers from 0-9: "0" for (0 key) etc. Numbers such as 10, 100, 1000 etc will be considered as "1".
+    - All Numbers from 0-9: "0" for (0 key) etc. 
+    Numbers such as 10, 100, 1000 etc will be considered as "1".
     
     - Other keys that are coded in (these are not held down, only clicked): 
         - "space" for spacebar
