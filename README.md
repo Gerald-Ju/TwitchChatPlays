@@ -36,6 +36,7 @@ Converts all chat input to lowercase for recognition
     - All Keys from A-Z: "w" for (w key), "a" for (a key) etc. 
     However only the standard "gaming" keys are currently coded in. 
     Other keys will need to be added in yourself.
+    
         - Gaming keys that are coded in:
             - "w" for W key
             - "a" for A key
