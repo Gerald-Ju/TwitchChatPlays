@@ -4,7 +4,7 @@ Pulls chat messages from Twitch and simulates keyboard presses for games.
 
 #### Uses Python ver 3.10.1
 
-The only non native python import is ```requests```.
+The only non built in python import is ```requests```.
 
 ## How to use
 
